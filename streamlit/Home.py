@@ -1,46 +1,48 @@
 import streamlit as st
-from PIL import Image
+import random
+import time
+import LogInput
+import Summarizer
 
+st.title("Simple chat")
 
-st.set_page_config(page_title="Streamlit Code Snippets",
-                   page_icon="👋",
-                   layout='wide')
+# Initialize chat history
+if "messages" not in st.session_state:
+    st.session_state.messages = []
 
-st.write("# Welcome to the Streamlit Code Snippet 👋")
-st.write("We start the app by runnning the home page with:")
-st.code("streamlit run Home.py")
+# Display chat messages from history on app rerun
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
 
-st.write(
-    "The app project structure contains the main page py file, and a folder called pages, with other subpages py files."
-)
+# Accept user input
+if prompt := st.chat_input("What is up?"):
+    # Add user message to chat history
+    st.session_state.messages.append({"role": "user", "content": prompt})
+    print(Summarizer.summarize())
+    # Display user message in chat message container
+    with st.chat_message("user"):
+        st.markdown(prompt)
 
-image = Image.open('snippet_tree.png')
-
-st.image(image)
-
-st.write(
-    "They all are rendered in the navigation panel on top of the sidebar.")
-st.write(
-    "Make sure to name the subpages correctly by indicating the order on the beginning of the name."
-)
-
-st.write(
-    "All pages can set their title, icon and default layout format (wide or centered) plus other default behaviour (initial sidebar state, menu items...)"
-)
-st.code(""" 
-import streamlit as st
-
-# As first st command in the page:
-st.set_page_config(page_title="Streamlit Code Snippets",
-                       page_icon="👋",
-                       layout='wide')
-
-st.write(......)
-
-""")
-
-st.sidebar.success("Select a page above.")
-
-st.markdown("""
-    Navigate throught the different pages on the navigation panel on the left
-""")
+    # Display assistant response in chat message container
+    with st.chat_message("assistant"):
+        message_placeholder = st.empty()
+        full_response = ""
+        assistant_response = random.choice(
+            [
+                "Hello there! How can I assist you today?",
+                "Hi, human! Is there anything I can help you with?",
+                "Do you need help?",
+            ]
+        )
+        # Simulate stream of response with milliseconds delay
+        for chunk in assistant_response.split():
+            full_response += chunk + " "
+            time.sleep(0.05)
+            # Add a blinking cursor to simulate typing
+            message_placeholder.markdown(full_response + "▌")
+        message_placeholder.markdown(full_response)
+        print(st.session_state.messages)
+    # Add assistant response to chat history
+    st.session_state.messages.append(
+        {"role": "assistant", "content": full_response})
