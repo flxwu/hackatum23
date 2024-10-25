@@ -1,0 +1,13 @@
+
+   Worker running at: 11/09/2023 14:20:50 +00:00
+                                ] DEBUG: Health service message:
+     173
+     66
+Daemon (172.25.11.231:58006).
+INFO RohdeSchwarz.InstallationServiceLib.InstallationService - Stats: Working set 231.05M, Virtual set 5.47G, CPU Time 10455.290 s, CPU User Time 6659.520 s, Threads 41
+from 10.0.2.217 port 41984
+of user root.
+1f0000) vs hw (40000000 10000000)
+Prompts.
+                                ] DEBUG:  * ResourceName: //mrt/0/health/0
+Result Name 2 A000600

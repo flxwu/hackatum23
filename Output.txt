@@ -1,0 +1,73 @@
+
+kernel: BIOS-e820: [mem 0x000000003dd36000-0x000000003e4dafff] reserved
+kernel: e820: update [mem 0x40000000-0xffffffff] usable ==> reserved
+kernel: ACPI: SSDT 0x000000003DCD0858 000C77 (v01 AMD    AmdTable 00000001 INTL 20120913)
+kernel: Secure boot could not be determined
+kernel: ACPI: FACS 0x000000003DD1ED80 000040
+kernel: SMBIOS 3.2.0 present.
+kernel: NX (Execute Disable) protection: active
+kernel: BIOS-e820: [mem 0x0000000009800000-0x000000000a1fffff] usable
+kernel: ACPI: FPDT 0x000000003DCBD590 000044 (v01 ALASKA A M I    01072009 AMI  00010013)
+kernel: efi: EFI v2.70 by American Megatrends
+kernel: BIOS-e820: [mem 0x000000003f000000-0x000000003fffffff] reserved
+kernel: ACPI: HPET 0x000000003DCC2AD8 000038 (v01 ALASKA A M I    01072009 AMI  00000005)
+kernel: BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+kernel: BIOS-e820: [mem 0x00000004bf000000-0x00000004bf33ffff] usable
+kernel: ACPI: WSMT 0x000000003DCD56F8 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+kernel: DMI: R&S IPSX4_TS_CMP/IPSX4_TS_CMP, BIOS 3.4 11/19/2021
+kernel: BIOS-e820: [mem 0x000000003d5ec000-0x000000003d709fff] reserved
+kernel: Using GB pages for direct mapping
+kernel: x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+kernel: BIOS-e820: [mem 0x000000003e4db000-0x000000003e55ffff] type 20
+kernel: ACPI: SSDT 0x000000003DCD48E8 000E0C (v01 AMD    AMD CPU  00000001 AMD  00000001)
+kernel: x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+kernel: BIOS-e820: [mem 0x000000000a20b000-0x000000003d5ebfff] usable
+kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+kernel: ACPI: UEFI 0x000000003DCC2B10 000042 (v01 ALASKA A M I    00000002      01000013)
+kernel: ACPI: Reserving DSDT table memory at [mem 0x3dcb51e8-0x3dcbd391]
+kernel: ACPI: SSDT 0x000000003DCBD678 005419 (v02 AMD    AmdTable 00000002 MSFT 02000002)
+kernel: efi: ACPI 2.0=0x3dcb5000 ACPI=0x3dcb5000 SMBIOS=0x3e390000 SMBIOS 3.0=0x3e38f000 MEMATTR=0x3a4c7018 ESRT=0x3ce10298 
+kernel: BIOS-e820: [mem 0x000000047f000000-0x00000004beffffff] reserved
+kernel: ACPI: VFCT 0x000000003DCC2B58 00D484 (v01 ALASKA A M I    00000001 AMD  31504F47)
+kernel: ACPI: BGRT 0x000000003DCCFFE0 000038 (v01 ALASKA A M I    01072009 AMI  00010013)
+kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+kernel: ACPI: FIDT 0x000000003DCBD5D8 00009C (v01 ALASKA A M I    01072009 AMI  00010013)
+kernel: x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+kernel: BIOS-e820: [mem 0x00000000fd000000-0x00000000ffffffff] reserved
+kernel: BIOS-e820: [mem 0x000000003e560000-0x000000003effffff] usable
+kernel: last_pfn = 0x4bf340 max_arch_pfn = 0x400000000
+kernel: signal: max sigframe size: 1776
+kernel: BIOS-e820: [mem 0x0000000000100000-0x0000000009601fff] usable
+kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ffff] usable
+kernel: ACPI: Early table checksum verification disabled
+kernel: e820: update [mem 0x3ce10000-0x3ce10fff] usable ==> reserved
+kernel: BIOS-e820: [mem 0x000000000a200000-0x000000000a20afff] ACPI NVS
+kernel: BIOS-e820: [mem 0x00000000f8000000-0x00000000fbffffff] reserved
+kernel: BIOS-e820: [mem 0x0000000100000000-0x000000047effffff] usable
+kernel: BIOS-e820: [mem 0x000000003d8aa000-0x000000003dd35fff] ACPI NVS
+kernel: ACPI: CDIT 0x000000003DCD0828 000029 (v01 AMD    AMD CDIT 00000001 AMD  00000001)
+kernel: x86/fpu: Enabled xstate features 0x7, context size is 832 bytes, using 'compacted' format.
+kernel: Linux version 5.15.73 (oe-user@oe-host) (x86_64-poky-linux-gcc (GCC) 11.3.0, GNU ld (GNU Binutils) 2.38.20220708) #1 SMP PREEMPT Sun May 21 21:05:48 UTC 2023
+kernel: BIOS-e820: [mem 0x000000003d70a000-0x000000003d8a9fff] usable
+kernel: esrt: Reserving ESRT space from 0x000000003ce10298 to 0x000000003ce102d0.
+kernel: tsc: Fast TSC calibration using PIT
+kernel: ACPI: FACP 0x000000003DCBD398 000114 (v06 ALASKA A M I    01072009 AMI  00010013)
+kernel: BIOS-provided physical RAM map:
+kernel: ACPI: SSDT 0x000000003DCD14D0 0010A5 (v01 AMD    AmdTable 00000001 INTL 20120913)
+kernel: ACPI: SSDT 0x000000003DCD2578 002369 (v01 AMD    AmdTable 00000001 INTL 20120913)
+kernel: ACPI: SSDT 0x000000003DCD5720 0002FE (v01 AMD    AmdTable 00000001 INTL 20120913)
+kernel: ACPI: XSDT 0x000000003DCB5098 0000B4 (v01 ALASKA A M I    01072009 AMI  00010013)
+kernel: ACPI: Reserving FACS table memory at [mem 0x3dd1ed80-0x3dd1edbf]
+kernel: ACPI: MCFG 0x000000003DCC2A98 00003C (v01 ALASKA A M I    01072009 MSFT 00010013)
+kernel: ACPI: CRAT 0x000000003DCD0018 000810 (v01 AMD    AMD CRAT 00000001 AMD  00000001)
+kernel: BIOS-e820: [mem 0x00000004bf340000-0x00000004bfffffff] reserved
+kernel: Command line: BOOT_IMAGE=/boot/vmlinuz root=/dev/sda2 video=eDP-1:d ro
+kernel: BIOS-e820: [mem 0x0000000009602000-0x00000000097fffff] reserved
+kernel: tsc: Detected 3244.097 MHz processor
+kernel: ACPI: DSDT 0x000000003DCB51E8 0081AA (v02 ALASKA A M I    01072009 INTL 20120913)
+kernel: ACPI: Reserving FACP table memory at [mem 0x3dcbd398-0x3dcbd4ab]
+kernel: ACPI: APIC 0x000000003DCBD4B0 0000DE (v03 ALASKA A M I    01072009 AMI  00010013)
+kernel: x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+kernel: ACPI: RSDP 0x000000003DCB5000 000024 (v02 ALASKA)
+kernel: last_pfn = 0x3f000 max_arch_pfn = 0x400000000
